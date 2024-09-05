@@ -56,7 +56,65 @@
 :root {
   scroll-behavior: smooth;
 }
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem;
+}
 
+.card-shadow {
+  position: relative;
+  z-index: 1;
+}
+
+.card-shadow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(1.02);
+}
+
+.card-body i {
+  font-size: 4rem; /* Icon size */
+  margin-bottom: 0.5rem; /* Space between icon and title */
+  display: block;
+}
+
+.card-body h2 {
+  font-size: 1.5rem; /* Title size */
+  margin: 0.5rem 0;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+@media (max-width: 576px) {
+  .card-body i {
+    font-size: 3rem; /* Smaller icon size on smaller screens */
+  }
+
+  .card-body h2 {
+    font-size: 1.25rem; /* Smaller title size on smaller screens */
+  }
+}
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
