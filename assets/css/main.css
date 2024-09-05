@@ -92,42 +92,27 @@
 }
 
 .card-body i {
-  font-size: 1.5rem; /* Smaller icon size for mobile */
-  color: #007bff;
+  font-size: 4rem; /* Icon size */
   margin-bottom: 0.5rem; /* Space between icon and title */
   display: block;
 }
 
 .card-body h2 {
-  font-size: 1rem; /* Adjusted font size for mobile */
+  font-size: 1.5rem; /* Title size */
   margin: 0.5rem 0;
 }
 
 .card-content {
-  padding: 0.5rem; /* Reduced padding for mobile */
-}
-
-.container {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.row {
-  margin-left: 0;
-  margin-right: 0;
+  padding: 1rem;
 }
 
 @media (max-width: 576px) {
   .card-body i {
-      font-size: 1.5rem; /* Smaller icon size on smaller screens */
+    font-size: 3rem; /* Smaller icon size on smaller screens */
   }
 
   .card-body h2 {
-      font-size: 1rem; /* Smaller title size on smaller screens */
-  }
-
-  .card-content p {
-      font-size: 0.75rem; /* Smaller text size for mobile */
+    font-size: 1.25rem; /* Smaller title size on smaller screens */
   }
 }
 /*--------------------------------------------------------------
