@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Single Ticketing System</title>
+  <title>Tickets</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -27,43 +27,26 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-
 </head>
 
-<body class="index-page">
+<body class="service-details-page">
 
-  <header id="header" class="header fixed-top">
+  <header id="header" class="header sticky-top">
 
     
 
     <div class="branding d-flex align-items-center">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="information.html" class="logo d-flex align-items-center">
-         
+        <a href="index.html" class="logo d-flex align-items-center">
+    
           <img src="assets/img/logo.png" alt="">
-          <h1 class="sitename">Metropolitan Manila Development Authority</h1>
+          <h1 class="sitename">Tickets Dashboard</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="news-updates.html" target="_blank">News and Updates</a></li>
-            <li><a href="enforcer-landing.html" target="_blank">Enforcer</a></li>
-            <li><a href="driver-landing.html" target="_blank">Driver</a></li>
-            <li><a href="superadmin-dashboard.html" target="_blank">Super Admin Mode</a></li>
-
-            <li class="dropdown"><a href="#"><span>Settings</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li class="dropdown"><a href="#"><span>Create Account</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">as Enforcer</a></li>
-                    <li><a href="#">as Driver</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none"></i>
+         
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
       </div>
 
@@ -73,28 +56,44 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="service.html">Services</a></li>
+            <li class="current">Road Accident</li>
+          </ol>
+        </nav>
+        <h1>Road Accident</h1>
+      </div>
+    </div><!-- End Page Title -->
 
-      <img src="assets/img/traffic-bg.jpg" alt="" data-aos="fade-in">
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-start">
-          <div class="col-lg-8">
-            <h2>Welcome to Single Ticketing System</h2>
-            <p>Introducing the MMDA Single Ticketing System (STS): A unified system that standardizes traffic enforcement and fines across Metro Manila, improving traffic management and agency collaboration.</p>
-          </div>
+      <div class="container mt-5">
+        <div class="row gy-4">
+         
+
+
+
+
         </div>
       </div>
 
-    </section><!-- /Hero Section -->
-
-   
-
     
+
+    </section><!-- /Service Details Section -->
 
   </main>
 
+  <footer id="footer" class="footer position-relative dark-background">
+
+
+
+ 
+  </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
